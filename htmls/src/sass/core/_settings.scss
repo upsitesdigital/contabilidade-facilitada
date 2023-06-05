@@ -1,0 +1,42 @@
+/*======================================
+  Settings
+======================================*/
+
+// Grid
+$grid-container: 1164px;
+$grid-gutter: 40px;
+// Media query breakpoints
+$breakpoints: ( xs: 480px, sm: 768px, md: 994px, lg: 1200px, xl: 1440px);
+// Fonts
+$font-main: 'Inter',
+sans-serif;
+$font-alt: 'Montserrat',
+sans-serif;
+$font-awesome: 'FontAwesome';
+$font-size: 16px;
+$font-color: #8c8c8c;
+// Colors
+$color-black: #000000;
+$color-white: #ffffff;
+$color-gray: #B5B5B5;
+$color-dark-gray: #333333;
+$color-aqua: #7fdbff;
+$color-blue: #00a0c8;
+$color-fuchsia: #f012be;
+$color-green: #00b400;
+$color-lime: #01ff70;
+$color-maroon: #85144b;
+$color-navy: #001f3f;
+$color-olive: #3d9970;
+$color-orange: #ff541d;
+$color-purple: #2f192e;
+$color-red: #fe0000;
+$color-silver: #dddddd;
+$color-teal: #39cccc;
+$color-yellow: #ffc801;
+$color-error: $color-red;
+$color-success: $color-green;
+$color-background: $color-white;
+// Magnific Popup
+$mfp-iframe-max-width: 1280px;
+$mfp-include-arrows: false;

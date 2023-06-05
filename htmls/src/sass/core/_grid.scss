@@ -1,0 +1,59 @@
+/*======================================
+  Grid
+======================================*/
+@include breakpoint2($min:xl, $max:'') {
+  .hidden-fullhd {display: none !important;}
+  .visible-fullhd {display: block !important;}
+}
+@include breakpoint2($min:lg, $max:xl) {
+  .hidden-fullDesktop {display: none !important;}
+  .visible-fullDesktop {display: block !important;}
+}
+@include breakpoint2($min:md, $max:lg) {
+  .hidden-desktop {display: none !important;}
+  .visible-desktop {display: block !important;}
+}
+@include breakpoint2($min:sm, $max:md) {
+  .hidden-tablet {display: none !important;}
+  .visible-tablet {display: block !important;}
+}
+@include breakpoint2($min:xs, $max:sm) {
+  .hidden-phablets {display: none !important;}
+  .visible-phablets {display: block !important;}
+}
+@include breakpoint2($min:'', $max:xs) {
+  .hidden-phone {display: none !important;}
+  .visible-phone {display: block !important;}
+}
+
+.container {
+  @include container;
+
+  @include breakpoint2($min:'', $max:sm) {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+.container-full {
+  @include container-full;
+
+  @include breakpoint2($min:'', $max:sm) {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+@include make-default-margin(mtop,10,top);
+@include make-default-padding(ptop,10,top);
+
+@include make-default-margin(mbottom,10,bottom);
+@include make-default-padding(pbottom,10,bottom);
+
+.fl { float: left; }
+.fr { float: right; }
+
+.center-block {
+  margin-left: auto;
+  margin-right: auto;
+  float: none;
+}

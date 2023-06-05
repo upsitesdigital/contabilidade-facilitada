@@ -1,0 +1,304 @@
+/*======================================
+  Sass Mixins and Functions
+======================================*/
+
+// Calculate em from font-size
+@function em($pixels, $context: $font-size) {
+  @if (unitless($pixels)) {
+    $pixels: $pixels * 1px;
+  }
+  @if (unitless($context)) {
+    $context: $context * 1px;
+  }
+  @return ($pixels / $context) * 1em;
+}
+
+// Calculate % from a value
+@function calc-percent($target, $container) {
+  @return ($target / $container) * 100%;
+}
+
+// Shortcut for calc-percent()
+@function cp($target, $container) {
+  @return calc-percent($target, $container);
+}
+
+// Calculate vw from a value
+@function get-vw-xs($target) {
+  $break: map-get($breakpoints, xs) / 1px;
+  $vw-context: ($break * 0.01) * 1px;
+  @return ($target / $vw-context) * 1vw;
+}
+
+// Calculate vw from a value
+@function get-vw-sm($target) {
+  $break: map-get($breakpoints, sm) / 1px;
+  $vw-context: ($break * 0.01) * 1px;
+  @return ($target / $vw-context) * 1vw;
+}
+
+// Calculate vw from a value
+@function get-vw-md($target) {
+  $break: map-get($breakpoints, md) / 1px;
+  $vw-context: ($break * 0.01) * 1px;
+  @return ($target / $vw-context) * 1vw;
+}
+
+// Calculate vw from a value
+@function get-vw-lg($target) {
+  $break: map-get($breakpoints, lg) / 1px;
+  $vw-context: ($break * 0.01) * 1px;
+  @return ($target / $vw-context) * 1vw;
+}
+
+// Calculate vw from a value
+@function get-vw-xl($target) {
+  $break: map-get($breakpoints, xl) / 1px;
+  $vw-context: ($break * 0.01) * 1px;
+  @return ($target / $vw-context) * 1vw;
+}
+
+// Function to remove unit from number
+@function strip-units($number) {
+  @return $number / ($number * 0 + 1);
+}
+
+// Calculate vw from a value
+@function get-vw($breakpoint, $index) {
+  $break: map-get($breakpoints, $breakpoint) / 1px;
+  $vw-context: ($break * 0.01) * 1;
+  $numb: $index * 5;
+  @return ($numb/$vw-context) * 1;
+}
+
+@mixin cor($color, $opacity: 0.3) {
+  background: $color;
+  /* The Fallback */
+  background: rgba($color, $opacity);
+}
+
+// Mixin for cross-browser inline-block
+@mixin inline-block($align: 'top') {
+  display: inline-block;
+  vertical-align: #{$align};
+  zoom: 1;
+  *display: inline;
+}
+
+// Mixin to create a grid
+@mixin columns($quant: repeat(12, 1fr), $gutter: 20, $align: top, $template: '') {
+  display: grid;
+  grid-template-columns: $quant;
+  gap: $gutter;
+  align-items: $align;
+  @if ($template!='') {
+    grid-template-areas: $template;
+  }
+}
+
+// Mixin to create a grid container
+@mixin container {
+  max-width: $grid-container;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: ($grid-gutter / 2);
+  padding-right: ($grid-gutter / 2);
+}
+
+// Mixin to create a grid container
+@mixin container-full {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: ($grid-gutter / 2);
+  padding-right: ($grid-gutter / 2);
+}
+
+// animate
+@mixin animate($time:0.5s, $ease:ease, $delay:0s) {
+  transition: all $time $ease $delay;
+  -webkit-transition: all $time $ease $delay;
+  -moz-transition: all $time $ease $delay;
+}
+
+// Mixin for media queries
+@mixin breakpoint2($min:'', $max:'') {
+  @if (map-get($breakpoints, $min) and map-get($breakpoints, $max)) {
+    @media (min-width: map-get($breakpoints, $min) + 1px) and (max-width: map-get($breakpoints, $max)) {
+      @content;
+    }
+  }
+  @else if $min=='' {
+    @media (max-width: map-get($breakpoints, $max)) {
+      @content;
+    }
+  }
+  @else if $max=='' {
+    @media (min-width: map-get($breakpoints, $min)) {
+      @content;
+    }
+  }
+  @else {
+    @media (max-width: $min) {
+      @content;
+    }
+  }
+}
+
+// Mixin to create a default margin
+@mixin make-default-margin($prefix: 'mtop', $limit: 10, $direction: 'top') {
+  @for $index from 1 through $limit {
+    .#{$prefix}-#{$index * 5} {
+      margin-#{$direction}: #{$index * 5}px;
+    }
+  }
+  @include breakpoint2($min:lg, $max:xl) {
+    @for $index from 1 through $limit {
+      $r: get-vw(xl, $index);
+      .#{$prefix}-#{$index * 5} {
+        margin-#{$direction}: #{$r}vw;
+      }
+    }
+  }
+  @include breakpoint2($min:md, $max:lg) {
+    @for $index from 1 through $limit {
+      $r: get-vw(lg, $index);
+      .#{$prefix}-#{$index * 5} {
+        margin-#{$direction}: #{$r}vw;
+      }
+    }
+  }
+  @include breakpoint2($min:sm, $max:md) {
+    @for $index from 1 through $limit {
+      $r: get-vw(md, $index);
+      .#{$prefix}-#{$index * 5} {
+        margin-#{$direction}: #{$r}vw;
+      }
+    }
+  }
+  @include breakpoint2($min:xs, $max:sm) {
+    @for $index from 1 through $limit {
+      $r: get-vw(sm, $index);
+      .#{$prefix}-#{$index * 5} {
+        margin-#{$direction}: #{$r}vw;
+      }
+      .mobile-#{$prefix}-#{$index * 5} {
+        margin-#{$direction}: #{$r}vw;
+      }
+    }
+  }
+  @include breakpoint2($min:'', $max:xs) {
+    @for $index from 1 through $limit {
+      $r: get-vw(xs, $index);
+      .#{$prefix}-#{$index * 5} {
+        margin-#{$direction}: #{$r}vw;
+      }
+      .mobile-#{$prefix}-#{$index * 5} {
+        margin-#{$direction}: #{$r}vw;
+      }
+    }
+  }
+}
+
+// Mixin to create a default padding
+@mixin make-default-padding($prefix: 'mtop', $limit: 10, $direction: 'top') {
+  @for $index from 1 through $limit {
+    .#{$prefix}-#{$index * 5} {
+      padding-#{$direction}: #{$index * 5}px;
+    }
+  }
+  @include breakpoint2($min:lg, $max:xl) {
+    @for $index from 1 through $limit {
+      $r: get-vw(xl, $index);
+      .#{$prefix}-#{$index * 5} {
+        padding-#{$direction}: #{$r}vw;
+      }
+    }
+  }
+  @include breakpoint2($min:md, $max:lg) {
+    @for $index from 1 through $limit {
+      $r: get-vw(lg, $index);
+      .#{$prefix}-#{$index * 5} {
+        padding-#{$direction}: #{$r}vw;
+      }
+    }
+  }
+  @include breakpoint2($min:sm, $max:md) {
+    @for $index from 1 through $limit {
+      $r: get-vw(md, $index);
+      .#{$prefix}-#{$index * 5} {
+        padding-#{$direction}: #{$r}vw;
+      }
+    }
+  }
+  @include breakpoint2($min:xs, $max:sm) {
+    @for $index from 1 through $limit {
+      $r: get-vw(sm, $index);
+      .#{$prefix}-#{$index * 5} {
+        padding-#{$direction}: #{$r}vw;
+      }
+      .mobile-#{$prefix}-#{$index * 5} {
+        padding-#{$direction}: #{$r}vw;
+      }
+    }
+  }
+  @include breakpoint2($min:'', $max:xs) {
+    @for $index from 1 through $limit {
+      $r: get-vw(xs, $index);
+      .#{$prefix}-#{$index * 5} {
+        padding-#{$direction}: #{$r}vw;
+      }
+      .mobile-#{$prefix}-#{$index * 5} {
+        padding-#{$direction}: #{$r}vw;
+      }
+    }
+  }
+}
+
+/// Helper function to easily use an SVG inline in CSS
+/// without encoding it to base64, saving bytes.
+/// It also helps with browser support.
+/// A small function allowing skipping base64 encoding
+/// and simply pasting the SVG markup right in the CSS.
+/// @author Jakob Eriksen
+/// @link http://codepen.io/jakob-e/pen/doMoML
+/// @param {String} $svg - SVG image to encode
+/// @return {String} - Encoded SVG data uri
+@function svg-uri($svg) {
+  $encoded: '';
+  $slice: 2000;
+  $index: 0;
+  $loops: ceil(str-length($svg) / $slice);
+  @for $i from 1 through $loops {
+    $chunk: str-slice($svg, $index, $index + $slice - 1);
+    $chunk: str-replace($chunk, '"', "'");
+    $chunk: str-replace($chunk, '<', '%3C');
+    $chunk: str-replace($chunk, '>', '%3E');
+    $chunk: str-replace($chunk, '&', '%26');
+    $chunk: str-replace($chunk, '#', '%23');
+    $encoded: #{$encoded}#{$chunk};
+    $index: $index + $slice;
+  }
+  @return url("data:image/svg+xml;charset=utf8,#{$encoded}");
+}
+
+/// Replace `$search` with `$replace` in `$string`
+/// @author Hugo Giraudel
+/// @link http://sassmeister.com/gist/1b4f2da5527830088e4d
+/// @param {String} $string - Initial string
+/// @param {String} $search - Substring to replace
+/// @param {String} $replace ('') - New value
+/// @return {String} - Updated string
+@function str-replace($string,
+$search,
+$replace: '') {
+  $index: str-index($string, $search);
+  @if $index {
+    @return str-slice($string,
+    1,
+    $index - 1)+$replace+str-replace(str-slice($string, $index + str-length($search)),
+    $search,
+    $replace);
+  }
+  @return $string;
+}

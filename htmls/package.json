@@ -1,0 +1,50 @@
+{
+  "author": "Bruno",
+  "private": true,
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^6.2.10",
+    "babel-plugin-lodash": "^3.3.4",
+    "babel-preset-es2015": "^6.18.0",
+    "browser-sync": "^2.29.3",
+    "ejs": "^2.7.4",
+    "eslint": "^3.6.0",
+    "eslint-loader": "^1.5.0",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-changed": "^1.3.0",
+    "gulp-clean-css": "^2.4.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-csso": "^2.0.0",
+    "gulp-ejs": "^2.1.2",
+    "gulp-filter": "^4.0.0",
+    "gulp-html-replace": "^1.6.1",
+    "gulp-load-plugins": "^1.6.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^3.2.1",
+    "gulp-sourcemaps": "^1.9.1",
+    "gulp-svg2png": "^1.0.2",
+    "gulp-svgmin": "^1.2.2",
+    "gulp-svgstore": "^6.0.0",
+    "gulp-uglify": "^2.0.0",
+    "gulp-util": "^3.0.7",
+    "lodash-webpack-plugin": "^0.10.7",
+    "webpack": "^1.14.0",
+    "webpack-bundle-analyzer": "^2.13.1"
+  },
+  "dependencies": {
+    "slick-carousel": "^1.6.0",
+    "svg4everybody": "^2.1.4",
+    "graceful-fs": "4.2.3"
+  },
+  "resolutions": {
+    "graceful-fs": "4.2.3"
+  },
+  "scripts": {
+    "preinstall": "npx npm-force-resolutions",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scripts": "webpack -p --progress --config webpack.production.config.js",
+    "build": "gulp sass:release & npm run scripts"
+  }
+}

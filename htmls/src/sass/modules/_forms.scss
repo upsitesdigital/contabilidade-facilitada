@@ -1,0 +1,10 @@
+/*======================================
+  Forms
+======================================*/
+
+@include breakpoint2($min:xl, $max:'') {}
+@include breakpoint2($min:lg, $max:xl) {}
+@include breakpoint2($min:md, $max:lg) {}
+@include breakpoint2($min:sm, $max:md) {}
+@include breakpoint2($min:xs, $max:sm) {}
+@include breakpoint2($min:'', $max:xs) {}
