@@ -2,9 +2,50 @@
   Paginations
 ======================================*/
 
+.paginations {
+  display: flex;
+  align-items: center;
+  gap: 62px;
+  padding: 77px 0 0 0;
+  &>a {
+    font-family: 'Gilroy-Bold';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 160%;
+    color: #102850;
+    &:hover {
+      color: #F49739;
+    }
+  }
+  .items {
+    display: flex;
+    gap: 23px;
+    &>a {
+      font-family: 'Gilroy-Bold';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 160%;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: #414141;
+      &.act,
+      &:hover {
+        color: #F49739;
+      }
+    }
+  }
+}
+
 @include breakpoint2($min:xl, $max:'') {}
+
 @include breakpoint2($min:lg, $max:xl) {}
+
 @include breakpoint2($min:md, $max:lg) {}
+
 @include breakpoint2($min:sm, $max:md) {}
+
 @include breakpoint2($min:xs, $max:sm) {}
+
 @include breakpoint2($min:'', $max:xs) {}

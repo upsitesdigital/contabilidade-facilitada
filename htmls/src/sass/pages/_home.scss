@@ -178,7 +178,7 @@
         width: 100%;
         height: 146.47px;
         border-radius: 6px 6px 0px 0px;
-        background-color: red;
+        background-color: rgba(16, 40, 80, 0.1);
       }
       .tag {
         font-family: 'Lexend';
@@ -237,133 +237,6 @@
       }
       &.slick-next {
         right: -81px;
-      }
-    }
-  }
-}
-
-.forum-featured {
-  padding: 84px 0 0 0;
-  .title {
-    border-top: 1px solid #E2E5EA;
-    padding: 65px 0 47px 0;
-    display: flex;
-    align-items: flex-end;
-    justify-content: space-between;
-    h3 {
-      font-family: 'Gilroy-Regular';
-      font-style: normal;
-      font-weight: 400;
-      font-size: 32px;
-      line-height: 120%;
-      color: #102850;
-      b {
-        font-family: 'Gilroy-Bold';
-      }
-    }
-    a {
-      font-family: 'Gilroy-Medium';
-      font-style: normal;
-      font-weight: 600;
-      font-size: 16px;
-      margin: 0 -2px 0 0;
-      gap: 13px;
-      line-height: 120%;
-      letter-spacing: 0.02em;
-      color: #102850;
-      display: flex;
-      align-items: center;
-      .icon {
-        width: 24px;
-        height: 24px;
-      }
-    }
-  }
-  .grid {
-    @include columns( $quant: 1fr 1fr, $gutter: 98px, $align: start, $template: '');
-    padding-bottom: 27px;
-    border-bottom: 1px solid #E2E5EA;
-    .cols {
-      .block-forum {
-        padding-bottom: 58px;
-        .header {
-          border-bottom: 1px solid #E2E5EA;
-          padding: 0 0 15px 0;
-          display: flex;
-          align-items: flex-end;
-          justify-content: space-between;
-          h4 {
-            font-family: 'Gilroy-Regular';
-            font-style: normal;
-            font-weight: 400;
-            font-size: 18px;
-            line-height: 120%;
-            color: #102850;
-            b {
-              font-family: 'Gilroy-Bold';
-            }
-          }
-          a {
-            font-family: 'Gilroy-Medium';
-            font-style: normal;
-            font-weight: 600;
-            font-size: 14px;
-            margin: 0 -2px 0 0;
-            gap: 8px;
-            line-height: 120%;
-            letter-spacing: 0.02em;
-            color: #102850;
-            display: flex;
-            align-items: center;
-            .icon {
-              width: 24px;
-              height: 24px;
-            }
-          }
-        }
-        .list {
-          padding: 8px 0 0 0;
-          li {
-            padding: 8px 0 0 0;
-            a {
-              @include columns( $quant: 66px 1fr, $gutter: 16px, $align: center, $template: '');
-              padding: 16px 16px 16px 18px;
-              background: rgba(240, 242, 243, 0.6);
-              border-radius: 6px;
-              .image {
-                width: 66px;
-                height: 66px;
-                display: block;
-                overflow: hidden;
-                border-radius: 50%;
-                background-color: red;
-              }
-              .text {
-                h5 {
-                  font-family: 'Gilroy-Bold';
-                  font-style: normal;
-                  font-weight: 700;
-                  font-size: 16px;
-                  line-height: 120%;
-                  color: #102850;
-                }
-                span {
-                  font-family: $font-main;
-                  font-style: normal;
-                  font-weight: 400;
-                  font-size: 13px;
-                  line-height: 120%;
-                  color: #5D6D88;
-                  display: block;
-                  padding-top: 6px;
-                  b {
-                    font-weight: 700;
-                  }
-                }
-              }
-            }
-          }
-        }
       }
     }
   }
@@ -545,7 +418,7 @@
     .input {
       width: 531px;
       height: 52px;
-      //background: #FFFFFF;
+      background: #FFFFFF;
       border: 1px solid #D1D5DB;
       border-radius: 6px;
       position: relative;

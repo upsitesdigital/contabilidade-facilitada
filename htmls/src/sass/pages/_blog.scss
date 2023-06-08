@@ -2,9 +2,242 @@
   Blog
 ======================================*/
 
+.content-post {
+  padding: 6px 0 0 0;
+  margin: 0 0 50px 0;
+  .header {
+    border-top: 1px solid rgba(16, 40, 80, 0.1);
+    border-bottom: 1px solid rgba(16, 40, 80, 0.1);
+    padding: 36px 0 53px 0;
+    .tag {
+      font-family: 'Lexend';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 140%;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: #8791A2;
+      padding: 0 0 13px 8px;
+      display: block;
+    }
+    h1 {
+      font-family: 'Gilroy-Bold';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 46px;
+      line-height: 120%;
+      color: #102850;
+      padding: 0 0 23px 0;
+    }
+    p {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 160%;
+      color: #5D6D88;
+      padding: 0 0 30px 0;
+    }
+    .data {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 160%;
+      color: #5D6D88;
+      padding: 0 0 0 2px;
+      span {
+        padding: 0 41px 0 35px;
+      }
+    }
+  }
+  .grid {
+    border-bottom: 1px solid rgba(16, 40, 80, 0.1);
+    padding: 51px 0 65px 0;
+    @include columns( $quant: 641px 1fr, $gutter: 128px, $align: stretch, $template: '');
+    .content {
+      padding-top: 5px;
+      .image {
+        margin: 0 0 72px 0;
+        width: 100%;
+        height: 368px;
+        background-color: rgba(16, 40, 80, 0.1);
+        border-radius: 12px;
+        overflow: hidden;
+      }
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        font-family: 'Gilroy-Bold';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 120%;
+        color: #102850;
+        padding: 63px 0 26px 0;
+      }
+      p {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 160%;
+        color: #5D6D88;
+        padding: 0 0 27px 0;
+      }
+      .footer {
+        border-top: 1px solid rgba(16, 40, 80, 0.1);
+        margin: 15px 0 0 0;
+        padding: 52px 0 0 0;
+        .tags {
+          font-size: 0;
+          a {
+            font-family: 'Gilroy-Medium';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 120%;
+            color: #102850;
+            display: inline-block;
+            padding: 10px;
+            background: #F3F9FF;
+            border-radius: 4px;
+            margin-right: 11px;
+          }
+        }
+        .share {
+          display: flex;
+          align-items: center;
+          gap: 40px;
+          padding-top: 31px;
+          span {
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 160%;
+            color: #5D6D88;
+          }
+          ul {
+            display: flex;
+            gap: 16px;
+            li {
+              a {
+                width: 32px;
+                height: 32px;
+                background-color: #146CC7;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 20px;
+                color: $color-white;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.categories-post {
+  padding: 6px 0 0 0;
+  margin: 0 0 50px 0;
+  .header {
+    border-top: 1px solid rgba(16, 40, 80, 0.1);
+    border-bottom: 1px solid rgba(16, 40, 80, 0.1);
+    padding: 24px 0 33px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    h1 {
+      font-family: 'Gilroy-Bold';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 32px;
+      line-height: 120%;
+      color: #102850;
+      padding: 0 0 0 0;
+    }
+    .count {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 160%;
+      color: #102850;
+      display: block;
+      padding: 11px 8px 0 0;
+    }
+  }
+  .grid {
+    border-bottom: 1px solid rgba(16, 40, 80, 0.1);
+    padding: 50px 0 65px 0;
+    @include columns( $quant: 672px 1fr, $gutter: 91px, $align: stretch, $template: '');
+    .content {
+      .list-post {
+        @include columns( $quant: 258px 1fr, $gutter: 34px, $align: start, $template: '');
+        padding: 40px 0 39px 0;
+        border-bottom: 1px solid rgba(16, 40, 80, 0.1);
+        .image {
+          width: 258px;
+          height: 147px;
+          background-color: rgba(16, 40, 80, 0.1);
+          border-radius: 4.80808px;
+          overflow: hidden;
+        }
+        .text {
+          span {
+            font-family: 'Lexend';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 10.9854px;
+            line-height: 140%;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: #8791A2;
+            display: block;
+            padding: 0 0 15px 0;
+          }
+          h3 {
+            font-family: 'Gilroy-Bold';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 24px;
+            padding: 0 0 14px 0;
+            line-height: 120%;
+            color: #102850;
+          }
+          p {
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 160%;
+            color: #5D6D88;
+          }
+        }
+        &:first-child {
+          padding-top: 0;
+        }
+      }
+    }
+  }
+}
+
 @include breakpoint2($min:xl, $max:'') {}
+
 @include breakpoint2($min:lg, $max:xl) {}
+
 @include breakpoint2($min:md, $max:lg) {}
+
 @include breakpoint2($min:sm, $max:md) {}
+
 @include breakpoint2($min:xs, $max:sm) {}
+
 @include breakpoint2($min:'', $max:xs) {}

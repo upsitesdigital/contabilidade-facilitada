@@ -1,0 +1,324 @@
+/*======================================
+  Forum
+======================================*/
+
+.forum-featured {
+  padding: 84px 0 0 0;
+  &.page {
+    padding: 6px 0 0 0;
+  }
+  &>.container>.header {
+    border-top: 1px solid rgba(16, 40, 80, 0.1);
+    // border-bottom: 1px solid rgba(16, 40, 80, 0.1);
+    padding: 24px 0 57px 0;
+    .d-flex {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    h1 {
+      font-family: 'Gilroy-Bold';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 32px;
+      line-height: 120%;
+      color: #102850;
+      padding: 0 0 0 0;
+    }
+    .link {
+      font-family: 'Gilroy-Medium';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 120%;
+      letter-spacing: 0.02em;
+      color: #102850;
+      display: flex;
+      align-items: center;
+      padding: 18px 4px 0 0;
+      gap: 9px;
+      .icon {
+        width: 24px;
+        height: 24px;
+        fill: transparent;
+      }
+    }
+    .search {
+      width: 100%;
+      height: 48px;
+      border: 1px solid #CFDBF0;
+      border-radius: 6px;
+      margin: 26px 0 0 0;
+      position: relative;
+      overflow: hidden;
+      input {
+        width: 100%;
+        height: 100%;
+        border: none;
+        outline: none;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 120%;
+        color: #102850;
+        padding: 0 56px 1px 24px;
+      }
+      .icons {
+        width: 19px;
+        height: 19px;
+        position: absolute;
+        top: 14px;
+        right: 24px;
+        .icon {
+          width: 100%;
+          height: 100%;
+          fill: #F47D34;
+        }
+      }
+    }
+    .tags {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 52px 0 0 4px;
+      li {
+        a {
+          font-family: 'Inter';
+          font-style: normal;
+          font-weight: 500;
+          font-size: 14px;
+          line-height: 120%;
+          color: #5D6D88;
+          &:hover {
+            color: #F47D34;
+          }
+        }
+        &.act {
+          a {
+            color: #F47D34;
+          }
+        }
+      }
+    }
+  }
+  .title {
+    border-top: 1px solid #E2E5EA;
+    padding: 65px 0 47px 0;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    h3 {
+      font-family: 'Gilroy-Regular';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 32px;
+      line-height: 120%;
+      color: #102850;
+      b {
+        font-family: 'Gilroy-Bold';
+      }
+    }
+    a {
+      font-family: 'Gilroy-Medium';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 16px;
+      margin: 0 -2px 0 0;
+      gap: 13px;
+      line-height: 120%;
+      letter-spacing: 0.02em;
+      color: #102850;
+      display: flex;
+      align-items: center;
+      .icon {
+        width: 24px;
+        height: 24px;
+      }
+    }
+  }
+  .grid {
+    @include columns( $quant: 1fr 1fr, $gutter: 98px, $align: start, $template: '');
+    padding-bottom: 27px;
+    border-bottom: 1px solid #E2E5EA;
+    .cols {
+      .tags {
+        padding: 0 0 0 3px;
+        margin: -5px 0 0 0;
+        li {
+          padding: 0 0 28px 0;
+          a {
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 120%;
+            color: #5D6D88;
+            &:hover {
+              color: #F47D34;
+            }
+          }
+          &.act {
+            a {
+              color: #F47D34;
+            }
+          }
+        }
+      }
+      .block-forum {
+        padding-bottom: 58px;
+        .header {
+          border-bottom: 1px solid #E2E5EA;
+          padding: 0 0 15px 0;
+          display: flex;
+          align-items: flex-end;
+          justify-content: space-between;
+          &.b-none {
+            border-bottom: 0;
+          }
+          h2 {
+            margin: -4px 0 0 0;
+          }
+          h2,
+          h4 {
+            font-family: 'Gilroy-Regular';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 120%;
+            color: #102850;
+            b {
+              font-family: 'Gilroy-Bold';
+            }
+          }
+          a {
+            font-family: 'Gilroy-Medium';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 14px;
+            margin: 0 -2px 0 0;
+            gap: 8px;
+            line-height: 120%;
+            letter-spacing: 0.02em;
+            color: #102850;
+            display: flex;
+            align-items: center;
+            .icon {
+              width: 24px;
+              height: 24px;
+            }
+          }
+        }
+        .list {
+          padding: 8px 0 0 0;
+          li {
+            padding: 8px 0 0 0;
+            &>a {
+              @include columns( $quant: 66px 1fr, $gutter: 16px, $align: center, $template: '');
+              padding: 16px 16px 16px 18px;
+              background: rgba(240, 242, 243, 0.6);
+              border-radius: 6px;
+              .image {
+                width: 66px;
+                height: 66px;
+                display: block;
+                overflow: hidden;
+                border-radius: 50%;
+                background-color: red;
+              }
+              .text {
+                h5 {
+                  font-family: 'Gilroy-Bold';
+                  font-style: normal;
+                  font-weight: 700;
+                  font-size: 16px;
+                  line-height: 120%;
+                  color: #102850;
+                }
+                span {
+                  font-family: $font-main;
+                  font-style: normal;
+                  font-weight: 400;
+                  font-size: 13px;
+                  line-height: 120%;
+                  color: #5D6D88;
+                  display: block;
+                  padding-top: 6px;
+                  b {
+                    font-weight: 700;
+                  }
+                }
+              }
+            }
+            &>article {
+              padding: 0 0 22px 0;
+              a {
+                padding: 21px 42px 0 26px;
+                background: rgba(240, 242, 243, 0.6);
+                border-radius: 8px;
+                display: block;
+                h5 {
+                  font-family: 'Gilroy-Bold';
+                  font-style: normal;
+                  font-weight: 700;
+                  font-size: 24px;
+                  line-height: 120%;
+                  color: #102850;
+                  padding: 0 0 17px 0;
+                }
+                span {
+                  font-family: 'Inter';
+                  font-style: normal;
+                  font-weight: 400;
+                  font-size: 12px;
+                  line-height: 140%;
+                  color: #5D6D88;
+                  b {
+                    font-family: 'Inter';
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 16px;
+                    line-height: 140%;
+                    color: #122748;
+                    display: block;
+                  }
+                }
+                p {
+                  font-family: 'Inter';
+                  font-style: normal;
+                  font-weight: 400;
+                  font-size: 16px;
+                  line-height: 140%;
+                  color: #102850;
+                  padding-bottom: 24px;
+                }
+                .text {
+                  padding: 16px 0 0 0;
+                  border-top: 1px solid #CFDBF0;
+                  margin: 14px 0 0 0;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    &.forum-list {
+      @include columns( $quant: 200px 1fr, $gutter: 144px, $align: start, $template: '');
+      padding-bottom: 99px;
+      border-bottom: 0;
+    }
+  }
+}
+
+@include breakpoint2($min:xl, $max:'') {}
+
+@include breakpoint2($min:lg, $max:xl) {}
+
+@include breakpoint2($min:md, $max:lg) {}
+
+@include breakpoint2($min:sm, $max:md) {}
+
+@include breakpoint2($min:xs, $max:sm) {}
+
+@include breakpoint2($min:'', $max:xs) {}
