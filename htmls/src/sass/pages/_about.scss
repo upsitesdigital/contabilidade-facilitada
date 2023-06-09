@@ -2,38 +2,112 @@
   About
 ======================================*/
 
-.page {
-  padding: 6px 0 157px 0;
-  .page-header {
-    @include columns( $quant: 591px 1fr, $gutter: 0, $align: start, $template: '');
-    border-top: 1px solid rgba(16, 40, 80, 0.1);
-    border-bottom: 1px solid rgba(16, 40, 80, 0.1);
-    margin-bottom: 67px;
-    &.big {
-      @include columns( $quant: 672px 1fr, $gutter: 0, $align: start, $template: '');
+.header-about {
+  margin: 8px 0 0 0;
+  padding: 65px 0 86px 0;
+  background: #102850;
+  h1 {
+    font-family: 'Lexend';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 140%;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    padding: 0 0 19px 0;
+  }
+  h2 {
+    font-family: 'Gilroy-Medium';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 46px;
+    line-height: 120%;
+    text-align: center;
+    color: #FF9933;
+    b {
+      font-family: 'Gilroy-Bold';
+      font-style: normal;
+      font-weight: 700;
+      color: #FFFFFF;
+      display: block;
     }
-    .text {
-      padding: 57px 0 0 0;
-      span {
-        font-family: 'Lexend';
-        font-style: normal;
-        font-weight: 500;
-        font-size: 14px;
-        line-height: 140%;
-        letter-spacing: 0.1em;
-        text-transform: uppercase;
-        color: #8791A2;
+  }
+}
+
+.content-about {
+  padding: 0 0 169px 0;
+  .featured {
+    @include columns( $quant: 497px 214px 264px 1fr, $gutter: 10px, $align: start, $template: '');
+    padding: 73px 0 48px 0;
+    .cols {
+      .icon {
+        fill: transparent;
+        width: 32px;
+        height: 32px;
+        margin: 0 0 21px 0;
+        &.stroke {
+          stroke: #FF9933;
+        }
       }
-      h1 {
+      h3 {
         font-family: 'Gilroy-Medium';
         font-style: normal;
         font-weight: 500;
-        font-size: 46px;
-        line-height: 120%;
+        font-size: 28px;
+        line-height: 140%;
         color: #102850;
-        padding: 10px 0 25px 0;
+        padding: 9px 0 0 6px;
         b {
           font-family: 'Gilroy-Bold';
+          font-style: normal;
+          font-weight: 500;
+          ;
+        }
+      }
+      span {
+        display: block;
+        font-family: 'Gilroy-Medium';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18.9082px;
+        line-height: 120%;
+        color: #5D6D88;
+        b {
+          display: block;
+          font-family: 'Gilroy-Bold';
+          font-style: normal;
+          font-weight: 700;
+          font-size: 31.0635px;
+          color: #102850;
+          padding: 0 0 12px 0;
+          display: block
+        }
+      }
+    }
+  }
+  .text-box {
+    @include columns( $quant: 47% 40.8%, $gutter: 12.2%, $align: start, $template: '');
+    padding: 79px 0 0 0;
+    border-top: 1px solid rgba(16, 40, 80, 0.1);
+    .text {
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        font-family: 'Gilroy-Medium';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 28px;
+        line-height: 140%;
+        color: #102850;
+        padding: 0 0 24px 0;
+        b {
+          font-family: 'Gilroy-Bold';
+          font-style: normal;
           font-weight: 700;
         }
       }
@@ -44,336 +118,70 @@
         font-size: 18px;
         line-height: 160%;
         color: #5D6D88;
+        padding: 0 0 30px 0;
+        b {
+          font-weight: 600;
+        }
       }
     }
-    .image {
-      img {
-        display: block;
+    .images {
+      padding: 10px 0 0 0;
+      .image {
         width: 100%;
-        height: auto;
-        object-fit: fill;
+        height: 338px;
+        background-color: rgba(16, 40, 80, 0.1);
+        margin-bottom: 20px;
+        border-radius: 8px;
       }
     }
   }
-  .page-content {
-    .list-courses {
-      padding: 0 0 0 8px;
-      li {
-        @include columns( $quant: 290px 1fr, $gutter: 32px, $align: start, $template: '');
-        border-bottom: 1px solid rgba(16, 40, 80, 0.1);
-        padding: 64px 0 63px 0;
-        &:first-child {
-          padding-top: 0;
-        }
-        &:last-child {
-          border-bottom: 0;
-        }
-        .image {
-          width: 290px;
-          height: 220px;
-          background: rgba(16, 40, 80, 0.1);
-          border-radius: 6px;
-          overflow: hidden;
-        }
-        .text {
-          .tag {
-            font-family: 'Lexend';
-            font-style: normal;
-            font-weight: 500;
-            font-size: 10.9854px;
-            line-height: 140%;
-            letter-spacing: 0.1em;
-            text-transform: uppercase;
-            color: #8791A2;
-            display: block;
-            padding: 0 0 7px 0;
-          }
-          h2 {
-            font-family: 'Gilroy-Bold';
-            font-style: normal;
-            font-weight: 700;
-            font-size: 24px;
-            line-height: 120%;
-            color: #102850;
-            padding: 0 0 15px 0;
-          }
-          p {
-            font-family: 'Inter';
-            font-style: normal;
-            font-weight: 400;
-            font-size: 16px;
-            line-height: 160%;
-            color: #5D6D88;
-            padding: 0 0 31px 0;
-          }
-          a {
-            font-family: 'Gilroy-Bold';
-            font-style: normal;
-            font-weight: 700;
-            font-size: 15px;
-            line-height: 120%;
-            letter-spacing: 0.02em;
-            color: #102850;
-            display: flex;
-            align-items: center;
-            gap: 15px;
-            .icon {
-              width: 24px;
-              height: 24px;
-            }
-          }
-        }
-      }
+  .slide-four {
+    margin: 7px 0 0 0;
+    .slick-slide {
+      margin: 0 12px;
     }
-    .contact-us {
-      h2 {
-        font-family: 'Inter';
+    .slick-list {
+      margin: 0 -12px;
+    }
+    .item {
+      display: block;
+      width: 263px;
+      height: 126px;
+      padding: 24px;
+      background: #F3F9FF;
+      border-radius: 6px;
+      .icon {
+        width: 24px;
+        height: 24px;
+        margin: 0 0 30px 0;
+        fill: transparent;
+      }
+      span {
+        font-family: 'Gilroy-Bold';
         font-style: normal;
-        font-weight: 500;
-        font-size: 32px;
-        line-height: 140%;
-        letter-spacing: -0.03em;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 120%;
         color: #102850;
-        text-align: center;
-        padding: 43px 0 56px 0;
-      }
-      form {
-        @include columns( $quant: 1fr 1fr, $gutter: 16px, $align: start, $template: 'name name' 'mail phone' 'msn msn' 'btn btn');
-        max-width: 695px;
-        margin: 0 auto;
-        label {
-          &.name {
-            grid-area: name;
-          }
-          &.mail {
-            grid-area: mail;
-          }
-          &.phone {
-            grid-area: phone;
-          }
-          &.msn {
-            grid-area: msn;
-          }
-          input {
-            width: 100%;
-            height: 46px;
-            outline: none;
-            border: 1px solid #CBC7C7;
-            border-radius: 4px;
-            font-family: 'Inter';
-            font-style: normal;
-            font-weight: 400;
-            font-size: 14px;
-            line-height: 160%;
-            color: #5D6D88;
-            padding: 0 24px;
-          }
-          textarea {
-            width: 100%;
-            height: 142px;
-            outline: none;
-            border: 1px solid #CBC7C7;
-            border-radius: 4px;
-            font-family: 'Inter';
-            font-style: normal;
-            font-weight: 400;
-            font-size: 14px;
-            line-height: 160%;
-            color: #5D6D88;
-            padding: 12px 24px;
-          }
-        }
-        .btn {
-          grid-area: btn;
-          display: flex;
-          justify-content: flex-end;
-          padding: 20px 0 0 0;
-        }
-        button {
-          width: 279px;
-          height: 41px;
-          background: #146CC7;
-          border-radius: 4.65985px;
-          border: none;
-          font-family: 'Gilroy-Bold';
-          font-style: normal;
-          font-weight: 700;
-          font-size: 16px;
-          line-height: 116%;
-          text-align: center;
-          letter-spacing: 0.02em;
-          color: #FFFFFF;
-        }
+        display: block;
       }
     }
-    .free-materials {
-      .grid-four {
-        @include columns( $quant: 1fr 1fr 1fr 1fr, $gutter: 90px 34px, $align: start, $template: '');
-        .item {
-          width: 256.33px;
-          .image {
-            width: 100%;
-            height: 146.47px;
-            border-radius: 6px 6px 0px 0px;
-            background-color: rgba(16, 40, 80, 0.1);
-          }
-          .tag {
-            font-family: 'Lexend';
-            font-style: normal;
-            font-weight: 500;
-            font-size: 10.9854px;
-            line-height: 140%;
-            letter-spacing: 0.1em;
-            text-transform: uppercase;
-            color: #8791A2;
-            display: block;
-            padding: 20px 0 7px 0;
-          }
-          h4 {
-            font-family: 'Gilroy-Bold';
-            font-style: normal;
-            font-weight: 700;
-            font-size: 18px;
-            padding-bottom: 18px;
-            margin-bottom: 19px;
-            line-height: 120%;
-            color: #102850;
-            border-bottom: 1px solid #E5E7EB;
-          }
-          a {
-            font-family: 'Gilroy-Medium';
-            font-style: normal;
-            font-weight: 600;
-            font-size: 15px;
-            margin: 0 -2px 0 0;
-            gap: 13px;
-            line-height: 120%;
-            letter-spacing: 0.02em;
-            color: #102850;
-            display: flex;
-            align-items: center;
-            .icon {
-              width: 24px;
-              height: 24px;
-            }
-          }
-        }
+    .slick-arrow {
+      width: 40px;
+      height: 40px;
+      font-size: 32px;
+      color: #102850;
+      padding: 0 0 2px 0px;
+      border: 1px solid #FFFFFF;
+      border-radius: 0;
+      position: absolute;
+      top: 29%;
+      background: transparent;
+      &.slick-prev {
+        left: -73px;
       }
-    }
-    .previous-exams {
-      .grid-four {
-        @include columns( $quant: 1fr 1fr 1fr 1fr, $gutter: 24px 20px, $align: start, $template: '');
-        .item {
-          padding: 24px 25px;
-          background: #F3F9FF;
-          border-radius: 6px;
-          .date {
-            font-family: 'Lexend';
-            font-style: normal;
-            font-weight: 500;
-            font-size: 10.9854px;
-            line-height: 140%;
-            letter-spacing: 0.1em;
-            text-transform: uppercase;
-            color: #8791A2;
-            display: block;
-            padding: 0 0 7px 0;
-          }
-          h4 {
-            font-family: 'Gilroy-Bold';
-            font-style: normal;
-            font-weight: 700;
-            font-size: 24px;
-            padding-bottom: 46px;
-            margin-bottom: 19px;
-            line-height: 120%;
-            color: #102850;
-            border-bottom: 1px solid #E5E7EB;
-          }
-          a {
-            width: 161px;
-            height: 42px;
-            background: #146CC7;
-            border-radius: 4px;
-            font-family: 'Gilroy-Bold';
-            font-style: normal;
-            font-weight: 700;
-            font-size: 15px;
-            line-height: 120%;
-            color: #FFFFFF;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin-top: 7px;
-          }
-        }
-      }
-    }
-    .grid {
-      @include columns( $quant: 1fr 1fr, $gutter: 0, $align: flex-end, $template: '');
-      padding: 0 14px 0 9px;
-      .cols {
-        &.right {
-          text-align: center;
-          padding: 0 0 76px 0;
-        }
-        h5 {
-          font-family: 'Inter';
-          font-style: normal;
-          font-weight: 600;
-          font-size: 20px;
-          line-height: 160%;
-          color: #5D6D88;
-        }
-        p {
-          font-family: 'Inter';
-          font-style: normal;
-          font-weight: 400;
-          font-size: 16px;
-          line-height: 160%;
-          color: #5D6D88;
-          padding: 0 0 69px 0;
-          b {
-            font-weight: 600;
-          }
-        }
-        a.btn-whats {
-          font-family: 'Inter';
-          font-style: normal;
-          font-weight: 700;
-          font-size: 20px;
-          line-height: 160%;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          color: #FFFFFF;
-          width: 263px;
-          height: 56px;
-          background: #46C13B;
-          border-radius: 8px;
-          margin: 11px auto 0 auto;
-          i {
-            font-size: 32px;
-            margin: 0 10px 0 0;
-          }
-        }
-        a.link {
-          font-family: 'Gilroy-Medium';
-          font-style: normal;
-          font-weight: 600;
-          font-size: 18px;
-          margin: 0 -80px 0 0;
-          gap: 13px;
-          line-height: 120%;
-          letter-spacing: 0.02em;
-          color: #102850;
-          display: inline-flex;
-          align-items: center;
-          .icon {
-            width: 24px;
-            height: 24px;
-          }
-        }
+      &.slick-next {
+        right: -73px;
       }
     }
   }
