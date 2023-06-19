@@ -2,12 +2,12 @@
 # This file is distributed under the same license as the Themes - Twenty Twenty-One package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2021-05-06 15:23:58+0000\n"
+"PO-Revision-Date: 2023-06-08 11:00:47+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: GlotPress/4.0.0-alpha.1\n"
+"X-Generator: GlotPress/4.0.0-alpha.4\n"
 "Language: pt\n"
 "Project-Id-Version: Themes - Twenty Twenty-One\n"
 
@@ -17,7 +17,7 @@ msgid "Twenty Twenty-One is a blank canvas for your ideas and it makes the block
 msgstr "O tema Twenty Twenty-One é uma tela em branco para as suas ideias, e o editor de blocos o seu melhor pincel. Com novos padrões de blocos, que lhe permitem criar um layout elegante em segundos, as cores suaves deste tema e o design atractivo - mas intemporal - farão o seu trabalho brilhar. Experimente-o! Veja como o Twenty Twenty-One melhora o seu portefólio, site de negócios, ou blog pessoal."
 
 #. Theme Name of the theme
-#: inc/block-patterns.php:24
+#: classes/class-twenty-twenty-one-dark-mode.php:381 inc/block-patterns.php:24
 #, gp-priority: high
 msgid "Twenty Twenty-One"
 msgstr "Twenty Twenty-One"
@@ -32,13 +32,17 @@ msgstr "<span class=\"nav-short\">Artigos</span> mais recentes"
 
 #: classes/class-twenty-twenty-one-customize-notice-control.php:40
 #: classes/class-twenty-twenty-one-dark-mode.php:178
-msgid "https://wordpress.org/support/article/twenty-twenty-one/#dark-mode-support"
-msgstr "https://wordpress.org/support/article/twenty-twenty-one/#dark-mode-support"
+msgid "https://wordpress.org/documentation/article/twenty-twenty-one/#dark-mode-support"
+msgstr "https://wordpress.org/documentation/article/twenty-twenty-one/#dark-mode-support"
 
 #. translators: %s: Twenty Twenty-One support article URL.
 #: classes/class-twenty-twenty-one-dark-mode.php:177
 msgid "Dark Mode is a device setting. If a visitor to your site requests it, your site will be shown with a dark background and light text. <a href=\"%s\">Learn more about Dark Mode.</a>"
 msgstr "O modo nocturno é uma configuração do dispositivo. Se um visitante do seu site solicitar, o seu site será mostrado com um fundo escuro e texto claro. <a href=\"%s\"> Saiba mais sobre o modo nocturno. </a>"
+
+#: classes/class-twenty-twenty-one-dark-mode.php:181
+msgid "Dark Mode can also be turned on and off with a button that you can find in the bottom corner of the page."
+msgstr "O modo nocturno pode ser ligado e desligado com um botão no canto inferior da página."
 
 #: classes/class-twenty-twenty-one-dark-mode.php:380
 msgid "This website uses LocalStorage to save the setting when Dark Mode support is turned on or off.<br> LocalStorage is necessary for the setting to work and is only used when a user clicks on the Dark Mode button.<br> No data is saved in the database or transferred."
@@ -88,22 +92,22 @@ msgctxt "Added to posts and pages that are missing titles"
 msgid "Untitled"
 msgstr "Sem título"
 
-#: inc/block-patterns.php:131
+#: inc/block-patterns.php:136
 msgctxt "Block pattern sample content"
 msgid "Cambridge, MA, 02139"
 msgstr "1001 Lisboa"
 
-#: inc/block-patterns.php:131
+#: inc/block-patterns.php:136
 msgctxt "Block pattern sample content"
 msgid "123 Main Street"
 msgstr "Rua das Avenidas, 123"
 
-#: inc/block-patterns.php:131
+#: inc/block-patterns.php:136
 msgctxt "Block pattern sample content"
 msgid "123-456-7890"
 msgstr "‎123 456 789"
 
-#: inc/block-patterns.php:131
+#: inc/block-patterns.php:136
 msgctxt "Block pattern sample content"
 msgid "example@example.com"
 msgstr "exemplo@exemplo.com"
@@ -193,23 +197,24 @@ msgstr "Modo nocturno: %s"
 msgid "This content is password protected. Please enter a password to view."
 msgstr "Este conteúdo está protegido por senha. Digite a senha para aceder."
 
-#: inc/menu-functions.php:34
+#. translators: Hidden accessibility text.
+#: inc/menu-functions.php:35
 msgid "Open menu"
 msgstr "Abrir menu"
 
-#: inc/block-patterns.php:121
+#: inc/block-patterns.php:125
 msgid "&#8220;Reading&#8221; by Berthe Morisot"
 msgstr "&#8220;Reading&#8221; por Berthe Morisot"
 
-#: inc/block-patterns.php:98
+#: inc/block-patterns.php:101
 msgid "&#8220;Self portrait&#8221; by Berthe Morisot"
 msgstr "&#8220;Auto-retracto&#8221; por Berthe Morisot"
 
-#: inc/block-patterns.php:98
+#: inc/block-patterns.php:101
 msgid "&#8220;Daffodils&#8221; by Berthe Morisot"
 msgstr "&#8220;Daffodils&#8221; por Berthe Morisot"
 
-#: inc/block-patterns.php:86 inc/block-patterns.php:121
+#: inc/block-patterns.php:89 inc/block-patterns.php:125
 #: inc/starter-content.php:43
 msgid "&#8220;Roses Trémières&#8221; by Berthe Morisot"
 msgstr "&#8220;Roses Trémières&#8221; por Berthe Morisot"
@@ -269,61 +274,61 @@ msgctxt "Theme starter content"
 msgid "Create your website with blocks"
 msgstr "Crie o seu site com blocos"
 
-#: inc/block-patterns.php:121
+#: inc/block-patterns.php:125
 msgid "Reading"
 msgstr "Leitura"
 
-#: inc/block-patterns.php:121
+#: inc/block-patterns.php:125
 msgid "Young Woman in Mauve"
 msgstr "Young Woman in Mauve"
 
-#: inc/block-patterns.php:121
+#: inc/block-patterns.php:125
 msgid "The Garden at Bougival"
 msgstr "The Garden at Bougival"
 
-#: inc/block-patterns.php:121
+#: inc/block-patterns.php:125
 msgid "In the Bois de Boulogne"
 msgstr "In the Bois de Boulogne"
 
-#: inc/block-patterns.php:121
+#: inc/block-patterns.php:125
 msgid "Villa with Orange Trees, Nice"
 msgstr "Villa with Orange Trees, Nice"
 
-#: inc/block-patterns.php:121
+#: inc/block-patterns.php:125
 msgid "Roses Trémières"
 msgstr "Roses Trémières"
 
-#: inc/block-patterns.php:110
+#: inc/block-patterns.php:114
 msgid "&#8220;Villa with Orange Trees, Nice&#8221; by Berthe Morisot"
 msgstr "&#8220;Villa with Orange Trees, Nice&#8221; por Berthe Morisot"
 
-#: inc/block-patterns.php:110
+#: inc/block-patterns.php:114
 msgid "Beautiful gardens painted by Berthe Morisot in the late 1800s"
 msgstr "Jardins pintados por Berthe Morisot no final do século XIX"
 
-#: inc/block-patterns.php:110 inc/block-patterns.php:121
+#: inc/block-patterns.php:114 inc/block-patterns.php:125
 msgid "&#8220;The Garden at Bougival&#8221; by Berthe Morisot"
 msgstr "&#8220;The Garden at Bougival&#8221; por Berthe Morisot"
 
-#: inc/block-patterns.php:86 inc/block-patterns.php:121
+#: inc/block-patterns.php:89 inc/block-patterns.php:125
 #: inc/starter-content.php:61
 msgid "&#8220;Young Woman in Mauve&#8221; by Berthe Morisot"
 msgstr "&#8220;Young Woman in Mauve&#8221; por Berthe Morisot"
 
-#: inc/block-patterns.php:86 inc/block-patterns.php:121
+#: inc/block-patterns.php:89 inc/block-patterns.php:125
 #: inc/starter-content.php:51
 msgid "&#8220;In the Bois de Boulogne&#8221; by Berthe Morisot"
 msgstr "&#8220;In the Bois de Boulogne&#8221; por Berthe Morisot"
 
-#: inc/block-patterns.php:74
+#: inc/block-patterns.php:76
 msgid "Berthe Morisot<br>(French, 1841-1895)"
 msgstr "Berthe Morisot<br>(Francesa, 1841-1895)"
 
-#: inc/block-patterns.php:74
+#: inc/block-patterns.php:76
 msgid "Playing in the Sand"
 msgstr "Playing in the Sand"
 
-#: inc/block-patterns.php:74
+#: inc/block-patterns.php:76
 msgid "&#8220;Playing in the Sand&#8221; by Berthe Morisot"
 msgstr "&#8220;Playing in the Sand&#8221; por Berthe Morisot"
 
@@ -421,7 +426,7 @@ msgid ", "
 msgstr ", "
 
 #. translators: %s: Post title. Only visible to screen readers.
-#: image.php:70 image.php:95 inc/template-tags.php:92 inc/template-tags.php:133
+#: image.php:70 image.php:96 inc/template-tags.php:92 inc/template-tags.php:133
 #: template-parts/content/content-page.php:48
 msgid "Edit %s"
 msgstr "Editar %s"
@@ -448,90 +453,90 @@ msgstr "Bordas"
 msgid "Overlap"
 msgstr "Sobrepor"
 
-#: inc/block-patterns.php:130
+#: inc/block-patterns.php:135
 msgctxt "Block pattern description"
 msgid "A block with 3 columns that display contact information and social media links."
 msgstr "Um bloco com 3 colunas que mostram informações de contacto e ligações para as redes sociais."
 
-#: inc/block-patterns.php:128
+#: inc/block-patterns.php:132
 msgid "Contact information"
 msgstr "Informações de contacto"
 
-#: inc/block-patterns.php:120
+#: inc/block-patterns.php:124
 msgctxt "Block pattern description"
 msgid "A list of projects with thumbnail images."
 msgstr "Uma lista de projectos com imagens em miniatura."
 
-#: inc/block-patterns.php:118
+#: inc/block-patterns.php:122
 msgid "Portfolio list"
 msgstr "Lista de portefólio"
 
-#: inc/block-patterns.php:109
+#: inc/block-patterns.php:113
 msgctxt "Block pattern description"
 msgid "An overlapping columns block with two images and a text description."
 msgstr "Um bloco de colunas sobrepostas com duas imagens e uma descrição de texto."
 
-#: inc/block-patterns.php:106
+#: inc/block-patterns.php:109
 msgid "Overlapping images and text"
 msgstr "Imagens e texto sobrepostos"
 
-#: inc/block-patterns.php:97
+#: inc/block-patterns.php:100
 msgctxt "Block pattern description"
 msgid "A media & text block with a big image on the left and a smaller one with bordered frame on the right."
 msgstr "Um bloco multimédia e texto com uma imagem grande à esquerda e uma menor com moldura à direita."
 
-#: inc/block-patterns.php:94
+#: inc/block-patterns.php:97
 msgid "Two images showcase"
 msgstr "Duas imagens"
 
-#: inc/block-patterns.php:85
+#: inc/block-patterns.php:88
 msgctxt "Block pattern description"
 msgid "Three images inside an overlapping columns block."
 msgstr "Três imagens dentro de um bloco de colunas sobrepostas."
 
-#: inc/block-patterns.php:82
+#: inc/block-patterns.php:84
 msgid "Overlapping images"
 msgstr "Imagens sobrepostas"
 
-#: inc/block-patterns.php:73
+#: inc/block-patterns.php:75
 msgctxt "Block pattern description"
 msgid "A Media & Text block with a big image on the left and a heading on the right. The heading is followed by a separator and a description paragraph."
 msgstr "Um bloco multimédia e texto com uma imagem grande à esquerda e um cabeçalho à direita. Ao cabeçalho segue-se um separador e um parágrafo de descrição."
 
-#: inc/block-patterns.php:70
+#: inc/block-patterns.php:72
 msgid "Media and text article title"
 msgstr "Multimédia e título de artigo de texto"
 
-#: inc/block-patterns.php:62
+#: inc/block-patterns.php:64
 msgid "example@example.com"
 msgstr "exemplo@exemplo.com"
 
-#: inc/block-patterns.php:62
+#: inc/block-patterns.php:64
 msgid "Dribbble"
 msgstr "Dribbble"
 
-#: inc/block-patterns.php:62
+#: inc/block-patterns.php:64
 msgid "Instagram"
 msgstr "Instagram"
 
-#: inc/block-patterns.php:62
+#: inc/block-patterns.php:64
 msgid "Twitter"
 msgstr "Twitter"
 
-#: inc/block-patterns.php:62
+#: inc/block-patterns.php:64
 msgid "Let&#8217;s Connect."
 msgstr "Siga-nos."
 
-#: inc/block-patterns.php:61
+#: inc/block-patterns.php:63
 msgctxt "Block pattern description"
 msgid "A huge text followed by social networks and email address links."
 msgstr "Um texto grande seguido de ligações de redes sociais e endereço de email."
 
-#: inc/block-patterns.php:58
+#: inc/block-patterns.php:59
 msgid "Links area"
 msgstr "Área de ligações"
 
-#: inc/block-patterns.php:50
+#: inc/block-patterns.php:51
 msgid "A new portfolio default theme for WordPress"
 msgstr "Um novo tema por omissão do WordPress para porftólios"
 
@@ -539,7 +544,8 @@ msgstr "Um novo tema por omissão do WordPress para porftólios"
 msgid "Large text"
 msgstr "Texto grande"
 
-#: image.php:83
+#. translators: Hidden accessibility text.
+#: image.php:84
 msgctxt "Used before full size attachment link."
 msgid "Full size"
 msgstr "Tamanho original"
@@ -569,7 +575,8 @@ msgstr "Menu"
 msgid "Primary menu"
 msgstr "Menu principal"
 
-#: header.php:26
+#. translators: Hidden accessibility text.
+#: header.php:29
 msgid "Skip to content"
 msgstr "Saltar para o conteúdo"
 

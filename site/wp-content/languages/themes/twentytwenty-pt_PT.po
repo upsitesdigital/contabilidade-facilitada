@@ -2,12 +2,12 @@
 # This file is distributed under the same license as the Themes - Twenty Twenty package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2020-11-06 10:38:56+0000\n"
+"PO-Revision-Date: 2023-02-23 21:35:26+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: GlotPress/4.0.0-alpha.1\n"
+"X-Generator: GlotPress/4.0.0-alpha.4\n"
 "Language: pt\n"
 "Project-Id-Version: Themes - Twenty Twenty\n"
 
@@ -22,7 +22,17 @@ msgstr "O nosso tema por omissão para 2020 foi desenvolvido para tirar o máxim
 msgid "Twenty Twenty"
 msgstr "Twenty Twenty"
 
-#: index.php:51
+#: classes/class-twentytwenty-customize.php:130
+msgctxt "color"
+msgid "Default"
+msgstr "Por omissão"
+
+#: classes/class-twentytwenty-customize.php:131
+msgctxt "color"
+msgid "Custom"
+msgstr "Personalizada"
+
+#: index.php:54
 msgid "Nothing Found"
 msgstr "Não foi encontrado nada"
 
@@ -30,7 +40,7 @@ msgstr "Não foi encontrado nada"
 msgid "Show author bio"
 msgstr "Mostrar informações do autor"
 
-#: template-parts/entry-author-bio.php:29
+#: template-parts/entry-author-bio.php:30
 msgid "View Archive <span aria-hidden=\"true\">&rarr;</span>"
 msgstr "Ver arquivo <span aria-hidden=\"true\">&rarr;</span>"
 
@@ -39,7 +49,7 @@ msgctxt "Theme starter content"
 msgid "The New UMoMA Opens its Doors"
 msgstr "O novo UMoMA abre as portas"
 
-#: inc/template-tags.php:414
+#: inc/template-tags.php:431
 msgctxt "A string that is output before one or more categories"
 msgid "In"
 msgstr "Em"
@@ -139,12 +149,13 @@ msgstr "Cor de fundo da sobreposição"
 msgid "Apply a custom color for links, buttons, featured images."
 msgstr "Adicione uma cor personalizada às ligações, botões e imagens de destaque."
 
-#: searchform.php:28 template-parts/modal-search.php:20
+#. translators: Hidden accessibility text.
+#: searchform.php:31 template-parts/modal-search.php:20
 msgid "Search for:"
 msgstr "Pesquisar por:"
 
 #. translators: %s: Number of search results.
-#: index.php:39
+#: index.php:42
 msgid "We found %s result for your search."
 msgid_plural "We found %s results for your search."
 msgstr[0] "Foi encontrado %s resultado para a sua pesquisa."
@@ -161,7 +172,7 @@ msgstr "Y"
 msgid "404 not found"
 msgstr "Erro 404 - Não encontrado"
 
-#: index.php:101
+#: index.php:104
 msgid "search again"
 msgstr "pesquisar de novo"
 
@@ -176,7 +187,7 @@ msgid "Up %s"
 msgstr "Topo %s"
 
 #. translators: 1: Comment date, 2: Comment time.
-#: classes/class-twentytwenty-walker-comment.php:72
+#: classes/class-twentytwenty-walker-comment.php:73
 msgid "%1$s at %2$s"
 msgstr "%1$s às %2$s"
 
@@ -227,11 +238,11 @@ msgstr "Menu de redes sociais"
 msgid "Edit <span class=\"screen-reader-text\">%s</span>"
 msgstr "Editar <span class=\"screen-reader-text\">%s</span>"
 
-#: functions.php:276
+#: functions.php:279
 msgid "Footer Menu"
 msgstr "Menu do rodapé"
 
-#: template-parts/content-cover.php:138 template-parts/content.php:48
+#: template-parts/content-cover.php:148 template-parts/content.php:48
 msgid "Pages:"
 msgstr "Páginas:"
 
@@ -239,7 +250,7 @@ msgstr "Páginas:"
 msgid "Footer"
 msgstr "Rodapé"
 
-#: template-parts/content-cover.php:138 template-parts/content.php:48
+#: template-parts/content-cover.php:148 template-parts/content.php:48
 msgid "Page"
 msgstr "Página"
 
@@ -251,7 +262,8 @@ msgstr "Modelo a toda a largura"
 msgid "Post"
 msgstr "Artigo"
 
-#: template-parts/modal-search.php:26
+#. translators: Hidden accessibility text.
+#: template-parts/modal-search.php:29
 msgid "Close search"
 msgstr "Fechar pesquisa"
 
@@ -264,42 +276,45 @@ msgid "Social links"
 msgstr "Redes sociais"
 
 #. translators: %s: Author name.
-#: inc/template-tags.php:375 template-parts/entry-author-bio.php:20
+#: inc/template-tags.php:382 template-parts/entry-author-bio.php:21
 msgid "By %s"
 msgstr "Por %s"
 
-#: template-parts/content-cover.php:88
+#. translators: Hidden accessibility text.
+#: template-parts/content-cover.php:96
 msgid "Scroll Down"
 msgstr "Deslizar para baixo"
 
-#: searchform.php:31
+#: searchform.php:36
 msgctxt "submit button"
 msgid "Search"
 msgstr "Pesquisar"
 
-#: searchform.php:29
+#: searchform.php:34
 msgctxt "placeholder"
 msgid "Search &hellip;"
 msgstr "Pesquisar &hellip;"
 
-#: index.php:48
+#: index.php:51
 msgid "We could not find any results for your search. You can give it another try through the search form below."
 msgstr "Não foi possível encontrar nenhum resultado para a sua pesquisa. Pode tentar novamente através do formulário de pesquisa abaixo."
 
-#: index.php:32
+#: index.php:35
 msgid "Search:"
 msgstr "Pesquisar:"
 
-#: inc/template-tags.php:466
+#: inc/template-tags.php:488
 msgid "Sticky post"
 msgstr "Artigo fixo"
 
-#: inc/template-tags.php:428
+#. translators: Hidden accessibility text.
+#: inc/template-tags.php:448
 msgid "Tags"
 msgstr "Etiquetas"
 
-#: inc/template-tags.php:410 template-parts/content-cover.php:70
-#: template-parts/entry-header.php:36
+#. translators: Hidden accessibility text.
+#: inc/template-tags.php:425 template-parts/content-cover.php:73
+#: template-parts/entry-header.php:39
 msgid "Categories"
 msgstr "Categorias"
 
@@ -315,70 +330,71 @@ msgstr "Pesquisar"
 msgid "Continue reading"
 msgstr "Continuar a ler"
 
-#: functions.php:578
+#: functions.php:594
 msgctxt "Short name of the larger font size in the block editor."
 msgid "XL"
 msgstr "XL"
 
-#: functions.php:572
+#: functions.php:588
 msgctxt "Short name of the large font size in the block editor."
 msgid "L"
 msgstr "L"
 
-#: functions.php:571
+#: functions.php:587
 msgctxt "Name of the large font size in the block editor"
 msgid "Large"
 msgstr "Grande"
 
-#: functions.php:566
+#: functions.php:582
 msgctxt "Short name of the regular font size in the block editor."
 msgid "M"
 msgstr "M"
 
-#: functions.php:565
+#: functions.php:581
 msgctxt "Name of the regular font size in the block editor"
 msgid "Regular"
 msgstr "Normal"
 
-#: functions.php:560
+#: functions.php:576
 msgctxt "Short name of the small font size in the block editor."
 msgid "S"
 msgstr "S"
 
-#: functions.php:559
+#: functions.php:575
 msgctxt "Name of the small font size in the block editor"
 msgid "Small"
 msgstr "Pequeno"
 
-#: functions.php:544
+#: functions.php:560
 msgid "Background Color"
 msgstr "Cor de fundo"
 
-#: functions.php:531
+#: functions.php:547
 msgid "Subtle Background"
 msgstr "Fundo subtil"
 
-#: functions.php:516
+#: functions.php:532
 msgid "Accent Color"
 msgstr "Cor de destaque"
 
-#: functions.php:401
+#: functions.php:407
 msgid "Footer #2"
 msgstr "Rodapé #2"
 
-#: functions.php:389
+#: functions.php:395
 msgid "Footer #1"
 msgstr "Rodapé #1"
 
-#: functions.php:362
+#. translators: Hidden accessibility text.
+#: functions.php:367
 msgid "Skip to the content"
 msgstr "Saltar para o conteúdo"
 
-#: functions.php:274
+#: functions.php:277
 msgid "Desktop Expanded Menu"
 msgstr "Menu expandido para desktop"
 
-#: functions.php:273
+#: functions.php:276
 msgid "Desktop Horizontal Menu"
 msgstr "Menu horizontal para desktop"
 
@@ -394,7 +410,8 @@ msgstr "Comentários mais antigos"
 msgid "Newer Comments"
 msgstr "Comentários mais recentes"
 
-#: classes/class-twentytwenty-walker-page.php:115 inc/template-tags.php:580
+#. translators: Hidden accessibility text.
+#: classes/class-twentytwenty-walker-page.php:117 inc/template-tags.php:604
 msgid "Show sub menu"
 msgstr "Mostrar submenu"
 
@@ -403,7 +420,8 @@ msgstr "Mostrar submenu"
 msgid "#%d (no title)"
 msgstr "#%d (sem título)"
 
-#: classes/class-twentytwenty-walker-comment.php:60
+#. translators: Hidden accessibility text.
+#: classes/class-twentytwenty-walker-comment.php:61
 msgid "says:"
 msgstr "diz:"
 
@@ -453,15 +471,17 @@ msgstr "<span class=\"nav-short\">Artigos</span> mais antigos"
 msgid "Newer <span class=\"nav-short\">Posts</span>"
 msgstr "<span class=\"nav-short\">Artigos</span> mais recentes"
 
-#: inc/template-tags.php:392
+#. translators: Hidden accessibility text.
+#: inc/template-tags.php:402
 msgid "Post date"
 msgstr "Data do artigo"
 
-#: inc/template-tags.php:368
+#. translators: Hidden accessibility text.
+#: inc/template-tags.php:373
 msgid "Post author"
 msgstr "Autor do artigo"
 
-#: functions.php:577
+#: functions.php:593
 msgctxt "Name of the larger font size in the block editor"
 msgid "Larger"
 msgstr "Muito grande"
@@ -470,7 +490,7 @@ msgstr "Muito grande"
 msgid "Expanded Social links"
 msgstr "Ligações de redes sociais"
 
-#: functions.php:277
+#: functions.php:280
 msgid "Social Menu"
 msgstr "Menu de redes sociais"
 
@@ -487,15 +507,15 @@ msgstr "Pelo autor do artigo"
 msgid "Creates a parallax effect when the visitor scrolls."
 msgstr "Cria um efeito de parallax ao deslocar o ecrã."
 
-#: functions.php:275
+#: functions.php:278
 msgid "Mobile Menu"
 msgstr "Menu mobile"
 
-#: functions.php:391
+#: functions.php:397
 msgid "Widgets in this area will be displayed in the first column in the footer."
 msgstr "Widgets nesta área serão mostrados na primeira coluna do rodapé."
 
-#: functions.php:403
+#: functions.php:409
 msgid "Widgets in this area will be displayed in the second column in the footer."
 msgstr "Widgets nesta área serão mostrados na segunda coluna do rodapé."
 

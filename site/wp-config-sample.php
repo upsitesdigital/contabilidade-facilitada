@@ -4,7 +4,7 @@
  *
  * Este ficheiro define os seguintes parâmetros: MySQL settings, Table Prefix,
  * Secret Keys, WordPress Language, e ABSPATH. Pode obter mais informação
- * visitando {@link http://codex.wordpress.org/Editing_wp-config.php Editing
+ * visitando {@link https://wordpress.org/support/article/editing-wp-config-php/ Editing
  * wp-config.php} no Codex. As definições de MySQL são-lhe fornecidas pelo seu serviço de alojamento.
  *
  * Este ficheiro contém as seguintes configurações:
@@ -14,7 +14,7 @@
  * * Prefixo das tabelas da base de dados
  * * ABSPATH
  *
- * @link https://codex.wordpress.org/Editing_wp-config.php
+ * @link https://wordpress.org/support/article/editing-wp-config-php/
  *
  * @package WordPress
  */
@@ -76,7 +76,7 @@ $table_prefix = 'wp_';
  * Para mais informações sobre outras constantes que pode usar para debugging,
  * visite o Codex.
  *
- * @link https://codex.wordpress.org/Debugging_in_WordPress
+ * @link https://wordpress.org/support/article/debugging-in-wordpress/
  */
 define( 'WP_DEBUG', false );
 
@@ -88,4 +88,4 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 /** Define as variáveis do WordPress e ficheiros a incluir. */
-require_once( ABSPATH . 'wp-settings.php' );
+require_once ABSPATH . 'wp-settings.php';
