@@ -1,0 +1,170 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"Project-Id-Version: DWQA Assign Ticket\n"
+"POT-Creation-Date: 2016-07-11 09:09+0700\n"
+"PO-Revision-Date: 2016-07-05 19:27+0700\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.7\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-WPHeader: dwqa-assign-ticket.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;"
+"_n_noop:1,2;_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: dwqa-assign-ticket.php:149
+msgid "Assign To:"
+msgstr ""
+
+#: dwqa-assign-ticket.php:151
+msgid "None"
+msgstr ""
+
+#: dwqa-assign-ticket.php:243
+#, php-format
+msgid "%s assigned a question to you"
+msgstr ""
+
+#: dwqa-assign-ticket.php:245
+#, php-format
+msgid ""
+"\n"
+"\t\tHi %1$s,<br><br>\n"
+"\t\t%2$s assigned a question to you.<br>\n"
+"\t\t<a href=\"%3$s\">View Question.</a>\n"
+"\t"
+msgstr ""
+
+#: templates/archive-question-filter.php:14
+msgid "Filter:"
+msgstr ""
+
+#: templates/archive-question-filter.php:16
+msgid "All"
+msgstr ""
+
+#: templates/archive-question-filter.php:18
+#: templates/content-single-question.php:35
+msgid "Open"
+msgstr ""
+
+#: templates/archive-question-filter.php:19
+#: templates/content-single-question.php:37
+msgid "Resolved"
+msgstr ""
+
+#: templates/archive-question-filter.php:20
+#: templates/content-single-question.php:36
+msgid "Closed"
+msgstr ""
+
+#: templates/archive-question-filter.php:22
+msgid "Unanswered"
+msgstr ""
+
+#: templates/archive-question-filter.php:24
+msgid "My questions"
+msgstr ""
+
+#: templates/archive-question-filter.php:25
+msgid "My subscribes"
+msgstr ""
+
+#: templates/archive-question-filter.php:28
+msgid "Questions"
+msgstr ""
+
+#: templates/archive-question-filter.php:29
+msgid "Subscribes"
+msgstr ""
+
+#: templates/archive-question-filter.php:35
+msgid "Sort by"
+msgstr ""
+
+#: templates/archive-question-filter.php:36
+msgid "Views"
+msgstr ""
+
+#: templates/archive-question-filter.php:37
+msgid "Answers"
+msgstr ""
+
+#: templates/archive-question-filter.php:38
+msgid "Votes"
+msgstr ""
+
+#: templates/content-question.php:14 templates/content-question.php:21
+msgid "&nbsp;&bull;&nbsp;"
+msgstr ""
+
+#: templates/content-question.php:20
+#, php-format
+msgid "<span><a href=\"%1$s\">%2$s%3$s</a> %4$s %5$s ago</span>"
+msgstr ""
+
+#: templates/content-question.php:26
+#, php-format
+msgid "<strong>%1$s</strong> views"
+msgstr ""
+
+#: templates/content-question.php:30
+#, php-format
+msgid "<strong>%1$s</strong> answers"
+msgstr ""
+
+#: templates/content-question.php:34
+#, php-format
+msgid "<strong>%1$s</strong> votes"
+msgstr ""
+
+#: templates/content-single-question.php:14
+msgid "Vote Up"
+msgstr ""
+
+#: templates/content-single-question.php:15
+msgid "Vote Down"
+msgstr ""
+
+#: templates/content-single-question.php:19
+#, php-format
+msgid "<span><a href=\"%1$s\">%2$s%3$s</a> %4$s asked %5$s ago</span>"
+msgstr ""
+
+#: templates/content-single-question.php:25
+msgid "Question Tags: "
+msgstr ""
+
+#: templates/content-single-question.php:32
+msgid "This question is:"
+msgstr ""
+
+#: templates/content-single-question.php:34
+msgid "Status"
+msgstr ""
+
+#. Plugin Name of the plugin/theme
+msgid "DWQA Assign Ticket"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid ""
+"A WordPress extension of DW Question & Answer Pro, which helps you admins "
+"to assign unresolved tickets to other admins or moderators."
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "DesignWall"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "https://www.designwall.com"
+msgstr ""

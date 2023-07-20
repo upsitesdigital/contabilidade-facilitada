@@ -1,0 +1,251 @@
+.dwqa-emo2{
+    width:20px;
+    height:20px;
+    background-image:url('../img/emoticons.png');
+    background-repeat: no-repeat;
+    background-size: 120px 140px;
+    margin: 0;
+    padding: 0 !important;
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: sub;
+}
+ul.dwqa-emoticon__board li .dwqa-emo2{
+    width:20px;
+    height:20px;
+    background-image:url('../img/emoticons.png');
+    background-repeat: no-repeat;
+    background-size: 120px 140px;
+    margin: 0;
+    padding: 0 !important;
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: sub;
+}
+.dwqa-emo2-smile {
+	background-position: 0 0;
+}
+.dwqa-emo2-grin {
+    background-position: -20px 0px !important;	
+}
+.dwqa-emo2-beaming {
+	background-position: -40px 0px !important;
+}
+.dwqa-emo2-squinting {
+	background-position: -60px 0px !important;
+}
+.dwqa-emo2-star {
+	background-position: -80px 0px !important;
+}
+.dwqa-emo2-heart {
+	background-position: -100px 0px !important;
+}
+
+.dwqa-emo2-love {
+	background-position: 0 -20px !important;
+}
+.dwqa-emo2-kiss {
+	background-position: -20px -20px !important;
+}
+.dwqa-emo2-wink {
+	background-position: -40px -20px !important;
+}
+.dwqa-emo2-tongue {
+	background-position: -60px -20px !important;
+}
+.dwqa-emo2-stongue {
+	background-position: -80px -20px !important;
+}
+.dwqa-emo2-cool {
+	background-position: -100px -20px !important;
+}
+
+.dwqa-emo2-hug {
+	background-position: 0 -40px !important;
+}
+.dwqa-emo2-money {
+	background-position: -20px -40px !important;
+}
+.dwqa-emo2-poop {
+	background-position: -40px -40px !important;
+}
+.dwqa-emo2-evil {
+	background-position: -60px -40px !important;
+}
+.dwqa-emo2-joy {
+	background-position: -80px -40px !important;
+}
+.dwqa-emo2-rofl {
+	background-position: -100px -40px !important;
+}
+
+.dwqa-emo2-sweat {
+	background-position: 0 -60px !important;
+}
+.dwqa-emo2-confused {
+	background-position: -20px -60px !important;
+}
+.dwqa-emo2-flushed {
+	background-position: -40px -60px !important;
+}
+.dwqa-emo2-hmm {
+	background-position: -60px -60px !important;
+}
+.dwqa-emo2-neutral {
+	background-position: -80px -60px !important;
+}
+.dwqa-emo2-shock {
+	background-position: -100px -60px !important;
+}
+
+
+.dwqa-emo2-sleep {
+	background-position: 0 -80px !important;
+}
+.dwqa-emo2-think {
+	background-position: -20px -80px !important;
+}
+.dwqa-emo2-sexy {
+	background-position: -40px -80px !important;
+}
+.dwqa-emo2-whut {
+	background-position: -60px -80px !important;
+}
+.dwqa-emo2-unamused {
+	background-position: -80px -80px !important;
+}
+.dwqa-emo2-zipper {
+	background-position: -100px -80px !important;
+}
+
+.dwqa-emo2-sad {
+	background-position: 0 -100px !important;
+}
+.dwqa-emo2-tired {
+	background-position: -20px -100px !important;
+}
+.dwqa-emo2-worried {
+	background-position: -40px -100px !important;
+}
+.dwqa-emo2-angry {
+	background-position: -60px -100px !important;
+}
+.dwqa-emo2-pouting {
+	background-position: -80px -100px !important;
+}
+.dwqa-emo2-dizzy {
+	background-position: -100px -100px !important;
+}
+
+.dwqa-emo2-fear {
+	background-position: 0 -120px !important;
+}
+.dwqa-emo2-fearful {
+	background-position: -20px -120px !important;
+}
+.dwqa-emo2-cry {
+	background-position: -40px -120px !important;
+}
+.dwqa-emo2-ill {
+	background-position: -60px -120px !important;
+}
+.dwqa-emo2-sneezing {
+	background-position: -80px -120px !important;
+}
+.dwqa-emo2-cold {
+	background-position: -100px -120px !important;
+}
+
+
+
+ul.dwqa-emoticon__board {
+    background: rgb(255, 255, 255);
+    border: 1px solid rgb(225, 225, 225);
+    border-radius: 5px;
+    padding: 4px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 2px;
+    /*display: none;*/
+    display: inline-block;
+    width: 168px;
+    z-index: 1100;
+    transition: opacity 0.3s, bottom 0.3s, top 0.3s;
+    /*opacity: 0;*/
+    margin: 0;
+    cursor: default;
+}
+ul.dwqa-emoticon__board li {
+    padding: 4px;
+    float: left;
+    list-style: none;
+}
+ul.dwqa-emoticon__board li:hover {
+    background: #eee;
+    border-radius: 3px;
+}
+ul.dwqa-emoticon__board .dwqa-emo2{
+	display:block !important;
+}
+
+.dwqa-board--above:before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 15px;
+    bottom: -8px;
+    border-top: 7px solid #ccc;
+    border-left: 7px solid rgba(255,255,255,0.15);
+    border-right: 7px solid rgba(255,255,255,0.15);
+    z-index: 9999;
+}
+
+.dwqa-board--above:after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 15px;
+    bottom: -7px;
+    border-top: 7px solid #fff;
+    border-left: 7px solid rgba(255,255,255,0.15);
+    border-right: 7px solid rgba(255,255,255,0.15);
+    z-index: 9999;
+}
+
+.dwqa-board--below:before {
+    content: '';
+    display: block;
+    position: absolute;
+	left: 15px;
+    top: -8px;
+    border-bottom: 7px solid #ccc;
+    border-left: 7px solid rgba(255,255,255,0.15);
+    border-right: 7px solid rgba(255,255,255,0.15);
+    z-index: 9999;
+}
+.dwqa-board--below:after {
+    content: '';
+    display: block;
+    position: absolute;
+ 	left: 15px;
+    top: -7px;
+    border-bottom: 7px solid #fff;
+    border-left: 7px solid rgba(255,255,255,0.15);
+    border-right: 7px solid rgba(255,255,255,0.15);
+    z-index: 9999;
+}
+
+
+/*Tiny MCE*/
+button i.mce-i-dwqa_emotions {
+    background-image: url('../img/emoticons.png');
+    background-repeat: no-repeat;
+    background-size: 120px 140px;
+    background-position: 0 0;
+}
+.dwqaCustomTinymcePanel{
+    box-shadow: none !important;
+    border: none !important;
+    background: transparent !important;
+}
+.mce-toolbar .mce-btn button, .qt-dfw{
+    vertical-align: unset;
+}

@@ -18,6 +18,8 @@
  *
  * @package WordPress
  */
+
+define ('WPLANG', 'pt_BR');
 define('WPCF7_AUTOP', false);
 // ** Definições de MySQL - obtenha estes dados do seu serviço de alojamento** //
 /** O nome da base de dados do WordPress */
